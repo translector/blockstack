@@ -1,0 +1,12 @@
+name: BlockStack
+description: 'A module to encapsulate custom block types. It''s bundled with four custom block types: One column, two columns, three columns and four columns.'
+type: module
+core: 8.x
+dependencies:
+  - block
+  - block_content
+  - field
+  - field_group
+  - system
+  - text
+version: 8.x-1.0

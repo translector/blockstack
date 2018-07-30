@@ -1,0 +1,126 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_four_columns
+    - field.field.block_content.block_four_columns.field_b4columncenterleft
+    - field.field.block_content.block_four_columns.field_b4columncenterright
+    - field.field.block_content.block_four_columns.field_b4columnleft
+    - field.field.block_content.block_four_columns.field_b4columnright
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_col
+        - group_columna_central_izq
+        - group_columna_central_der
+        - group_columna_derecha
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_col:
+      children:
+        - field_b4columnleft
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Columna izquierda'
+    group_columna_central_izq:
+      children:
+        - field_b4columncenterleft
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Columna central izq'
+    group_columna_central_der:
+      children:
+        - field_b4columncenterright
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Columna central der'
+    group_columna_derecha:
+      children:
+        - field_b4columnright
+      parent_name: group_tabs
+      weight: 23
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Columna derecha'
+id: block_content.block_four_columns.default
+targetEntityType: block_content
+bundle: block_four_columns
+mode: default
+content:
+  field_b4columncenterleft:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_b4columncenterright:
+    weight: 28
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_b4columnleft:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_b4columnright:
+    weight: 29
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: block_two_columns
+label: 'Block Two Columns'
+revision: 0
+description: 'A block with two columns'

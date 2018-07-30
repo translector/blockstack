@@ -1,0 +1,104 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_three_columns
+    - field.field.block_content.block_three_columns.field_b3colcenter
+    - field.field.block_content.block_three_columns.field_b3colleft
+    - field.field.block_content.block_three_columns.field_b3colright
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_columna_izquierda
+        - group_columna_central
+        - group_columna_derecha
+      parent_name: ''
+      weight: 20
+      format_type: tabs
+      format_settings:
+        label: Tabs
+        direction: horizontal
+        id: ''
+        classes: ''
+      label: Tabs
+    group_columna_izquierda:
+      children:
+        - field_b3colleft
+      parent_name: group_tabs
+      weight: 20
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Columna izquierda'
+    group_columna_central:
+      children:
+        - field_b3colcenter
+      parent_name: group_tabs
+      weight: 21
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'Columna central'
+    group_columna_derecha:
+      children:
+        - field_b3colright
+      parent_name: group_tabs
+      weight: 22
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Columna derecha'
+id: block_content.block_three_columns.default
+targetEntityType: block_content
+bundle: block_three_columns
+mode: default
+content:
+  field_b3colcenter:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_b3colleft:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_b3colright:
+    weight: 28
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

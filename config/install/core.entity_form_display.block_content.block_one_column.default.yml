@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_one_column
+    - field.field.block_content.block_one_column.field_b1column
+  module:
+    - text
+id: block_content.block_one_column.default
+targetEntityType: block_content
+bundle: block_one_column
+mode: default
+content:
+  field_b1column:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

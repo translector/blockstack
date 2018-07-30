@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_two_columns:920dc348-c94e-47da-bd25-93ae2658d917'
+  module:
+    - block_content
+    - system
+  theme:
+    - real
+id: exampleofatwocolumnblock
+theme: real
+region: frontpagecontent
+weight: -7
+provider: null
+plugin: 'block_content:920dc348-c94e-47da-bd25-93ae2658d917'
+settings:
+  id: 'block_content:920dc348-c94e-47da-bd25-93ae2658d917'
+  label: 'Example of a two column block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

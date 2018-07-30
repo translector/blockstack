@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_four_columns
+    - field.storage.block_content.field_b4columnleft
+  module:
+    - text
+id: block_content.block_four_columns.field_b4columnleft
+field_name: field_b4columnleft
+entity_type: block_content
+bundle: block_four_columns
+label: 'Columna izquierda'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

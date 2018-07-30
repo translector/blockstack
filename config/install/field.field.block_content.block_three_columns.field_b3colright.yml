@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_three_columns
+    - field.storage.block_content.field_b3colright
+  module:
+    - text
+id: block_content.block_three_columns.field_b3colright
+field_name: field_b3colright
+entity_type: block_content
+bundle: block_three_columns
+label: 'Columna derecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

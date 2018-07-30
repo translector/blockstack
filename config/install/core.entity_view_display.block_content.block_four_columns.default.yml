@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_four_columns
+    - field.field.block_content.block_four_columns.field_b4columncenterleft
+    - field.field.block_content.block_four_columns.field_b4columncenterright
+    - field.field.block_content.block_four_columns.field_b4columnleft
+    - field.field.block_content.block_four_columns.field_b4columnright
+  module:
+    - text
+id: block_content.block_four_columns.default
+targetEntityType: block_content
+bundle: block_four_columns
+mode: default
+content:
+  field_b4columncenterleft:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_b4columncenterright:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_b4columnleft:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_b4columnright:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_three_columns:d1f775b9-b5f8-46e2-88fd-582997badd26'
+  module:
+    - block_content
+    - system
+  theme:
+    - real
+id: exampleofathreecolumnblock
+theme: real
+region: frontpagecontent
+weight: -6
+provider: null
+plugin: 'block_content:d1f775b9-b5f8-46e2-88fd-582997badd26'
+settings:
+  id: 'block_content:d1f775b9-b5f8-46e2-88fd-582997badd26'
+  label: 'Example of a three column block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

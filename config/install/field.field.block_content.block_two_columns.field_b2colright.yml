@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_two_columns
+    - field.storage.block_content.field_b2colright
+  module:
+    - text
+id: block_content.block_two_columns.field_b2colright
+field_name: field_b2colright
+entity_type: block_content
+bundle: block_two_columns
+label: 'Columna derecha'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: block_four_columns
+label: 'Block Four Columns'
+revision: 0
+description: 'A block with four columns'

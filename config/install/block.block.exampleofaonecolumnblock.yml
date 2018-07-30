@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_one_column:53a7f2b8-bef8-43e3-90fc-0711753faaff'
+  module:
+    - block_content
+  theme:
+    - real
+id: exampleofaonecolumnblock
+theme: real
+region: frontpagecontent
+weight: 0
+provider: null
+plugin: 'block_content:53a7f2b8-bef8-43e3-90fc-0711753faaff'
+settings:
+  id: 'block_content:53a7f2b8-bef8-43e3-90fc-0711753faaff'
+  label: 'Example of a one column block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

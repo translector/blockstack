@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: block_three_columns
+label: 'Block Three Columns'
+revision: 0
+description: 'A block with three columns'
